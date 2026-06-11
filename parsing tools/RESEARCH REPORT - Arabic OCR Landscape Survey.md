@@ -51,6 +51,19 @@ This report catalogs **33+ tools/repos/projects** across 5 tiers of relevance.
 
 ---
 
+### 1b. Baseer -- SOTA Arabic Document-to-Markdown VLM (HOSTED-ONLY)
+
+| Field | Detail |
+|-------|--------|
+| **Paper** | arXiv:2509.18174 (2025), *Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR* |
+| **Org** | Misraj AI |
+| **Architecture** | Fine-tuned Qwen2.5-VL-3B-Instruct (vision encoder frozen, decoder adapted) |
+| **Benchmark** | WER **0.25** on Misraj-DocOCR (vendor-authored), best WER vs Gemini-2.5-pro / Azure / GPT-5 |
+
+**Key point (verified June 2026):** the printed-document Baseer model is **NOT released as open weights** — it is **hosted-only at baseerocr.com**. The only public weights under the Misraj org, `Misraj/Baseer__Nakba`, are a *different* model: "Baseer-Nakba HTR," a fine-tune for the NAKBA 2026 **handwritten historical-manuscript** competition (the README itself redirects document-extraction users to baseerocr.com). So Baseer **cannot be benchmarked locally** for printed Arabic; treat it as a hosted API option. See the [New Parsers Benchmark](comparison_reports/new_parsers_benchmark_M2Pro.md) for the openly-runnable stand-in (QARI) measured on M2 Pro / 16 GB.
+
+**Relevance: HIGH (but hosted).** Closest in design to this repo's goal (Arabic → Markdown with layout), but only usable via API.
+
 ### 2. DIMI-Arabic-OCR -- Fine-tuned VLM for Arabic OCR
 
 | Field | Detail |

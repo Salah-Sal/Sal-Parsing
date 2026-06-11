@@ -7,3 +7,14 @@
 # Python
 __pycache__/
 *.pyc
+.venv/
+.venv-*/
+
+# Local model cache / scratch
+.hf_cache/
+samples/
+benchmark/scratch/
+benchmark/results/
+benchmark/_inputs/
+benchmark/_inputs5/
+benchmark/*.log

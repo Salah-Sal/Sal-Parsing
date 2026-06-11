@@ -15,6 +15,9 @@ Comparison of PDF-to-Markdown parsing tools for scientific research papers (arXi
 | [OCRFlux](https://github.com/ocrflux/ocrflux) | — | [Guide](parsing%20tools/PARSING_GUIDE%20-%20OCRFlux.md) |
 | [DeepSeek-OCR](https://github.com/deepseek-ai) | — | [Guide](parsing%20tools/PARSING_GUIDE%20-%20DeepSeek-OCR.md) |
 | [Dolphin](https://github.com/bytedance/Dolphin) | — | [Guide](parsing%20tools/PARSING_GUIDE%20-%20Dolphin.md) |
+| [MinerU2.5](https://github.com/opendatalab/MinerU) | benchmarked (M2 Pro) | [Guide](parsing%20tools/PARSING_GUIDE%20-%20MinerU.md) |
+| [Chandra](https://github.com/datalab-to/chandra) | benchmarked (M2 Pro) | [Guide](parsing%20tools/PARSING_GUIDE%20-%20Chandra.md) |
+| [QARI-OCR](https://github.com/NAMAA-ORG/qari-ocr-paper-2025) | benchmarked (Arabic) | [Survey](parsing%20tools/RESEARCH%20REPORT%20-%20Arabic%20OCR%20Landscape%20Survey.md) |
 
 ## Structure
 
@@ -33,3 +36,4 @@ papers/                 # Source PDFs (gitignored)
 - [Marker Tier 1 vs Docling Tier 4](parsing%20tools/comparison_reports/marker_tier1_vs_docling_tier4.md)
 - [SciPDF Tier 3 vs Marker](parsing%20tools/comparison_reports/scipdf_tier3_vs_marker_tier1.md)
 - [SciPDF Tier 5 vs Marker](parsing%20tools/comparison_reports/scipdf_tier5_vs_marker_tier1.md)
+- [New Parsers Benchmark — MinerU2.5 vs Marker vs QARI on Apple M2 Pro / 16 GB](parsing%20tools/comparison_reports/new_parsers_benchmark_M2Pro.md)
