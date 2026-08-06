@@ -24,9 +24,23 @@ Comparison of PDF-to-Markdown parsing tools for scientific research papers (arXi
 ```
 parsing tools/          # Setup guides with tier configs and benchmarks
   comparison_reports/   # Side-by-side quality comparisons
-output/                 # Parsed markdown/JSON samples per tool and tier
+benchmark/              # Tier configs and benchmark scripts
+output/                 # Parsed markdown/JSON per tool and tier
 papers/                 # Source PDFs (gitignored)
 ```
+
+## Benchmark document
+
+Every parse under `output/` is of the same source document, so the tools and
+tiers are directly comparable:
+
+> Zhang, Alex L., Tim Kraska, and Omar Khattab. *Recursive Language Models*.
+> arXiv:[2512.24601v2](https://arxiv.org/abs/2512.24601). Licensed
+> [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+It was chosen for having the failure modes that separate these tools: a
+multi-column layout, inline math, footnotes, and a multi-section comparison
+table with grouped column headers.
 
 ## Comparison Reports
 
@@ -37,3 +51,10 @@ papers/                 # Source PDFs (gitignored)
 - [SciPDF Tier 3 vs Marker](parsing%20tools/comparison_reports/scipdf_tier3_vs_marker_tier1.md)
 - [SciPDF Tier 5 vs Marker](parsing%20tools/comparison_reports/scipdf_tier5_vs_marker_tier1.md)
 - [New Parsers Benchmark — MinerU2.5 vs Marker vs QARI on Apple M2 Pro / 16 GB](parsing%20tools/comparison_reports/new_parsers_benchmark_M2Pro.md)
+
+## License and attribution
+
+Original work in this repository (guides, comparison reports, research reports,
+benchmark scripts, notebooks) is MIT licensed: see [`LICENSE`](LICENSE).
+Third-party material and the reasoning behind which documents are and are not
+republished here are documented in [`NOTICE.md`](NOTICE.md).
